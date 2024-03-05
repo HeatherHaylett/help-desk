@@ -22,12 +22,11 @@ export default CustomerScreen = ({navigation}) => {
     }
 
     return (
-        <View style={{height: "100%", justifyContent: "space-between", borderColor: "pink", borderWidth: 1}}>
+        <View style={{height: "100%", justifyContent: "space-between"}}>
             <View style={{
                 paddingHorizontal: 20,
                 justifyContent: "space-evenly",
                 height: "50%",
-                borderColor: "purple", borderWidth: 1
             }}>
                 <TextInput
                     onChangeText={(value) => setForm({...form, name: value})}
@@ -64,7 +63,7 @@ export default CustomerScreen = ({navigation}) => {
                         paddingLeft: 10,
                     }}
                     value={form.comment}
-                    placeholder="Explain your problem"
+                    placeholder="Describe the issue"
                     keyboardType="default"
                 />
                 <Button 
