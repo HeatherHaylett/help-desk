@@ -7,7 +7,7 @@ import {
 
 export default CustomerScreen = ({navigation}) => {
     const [form, setForm] = useState({});
-    console.log(form)
+
     const handleSubmitForm = () => {
         return fetch('http://localhost:3000/support', {
             method: 'POST',
